@@ -30,7 +30,7 @@ public class Main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("fxml/Main.fxml"));
             Scene scene = new Scene(root);
             stage = primaryStage;
-            primaryStage.setTitle("Medical Agent ");
+            primaryStage.setTitle("SAT Solver ");
             primaryStage.initStyle(StageStyle.DECORATED);
             primaryStage.setResizable(false);
             primaryStage.setScene(scene);

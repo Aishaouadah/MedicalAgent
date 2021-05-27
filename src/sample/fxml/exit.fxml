@@ -100,7 +100,7 @@
                </font>
             </Label>
          </children></Pane>
-      <Label alignment="BASELINE_LEFT" graphicTextGap="9.0" layoutX="42.0" layoutY="87.0" prefHeight="46.0" prefWidth="199.0" text="Swarm intelligence" textFill="WHITE">
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutX="2.0" layoutY="87.0" prefHeight="46.0" prefWidth="259.0" text="SAT Problem Solutions'" textFill="WHITE">
          <font>
             <Font size="23.0" />
          </font>
