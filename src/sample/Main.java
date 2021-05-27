@@ -3,13 +3,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.stage.Window;
 
 import java.awt.*;
-import java.io.IOException;
 
 public class Main extends Application {
     Scene scene1,scene2,scene3,scene4,scene5,main;
@@ -44,10 +41,7 @@ public class Main extends Application {
         }
 
     }
-    public void changeScence(String fxml) throws IOException {
-        Parent pane =FXMLLoader.load(getClass().getResource(fxml));
-        stage.getScene().setRoot(pane);
-    }
+
 
 
     public static void main(String[] args) {
