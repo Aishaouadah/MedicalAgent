@@ -9,9 +9,11 @@ import javafx.stage.StageStyle;
 import javafx.stage.Window;
 
 import java.awt.*;
+import java.io.IOException;
 
 public class Main extends Application {
-   Scene scene1,scene2,scene3,scene4,scene5,main;
+    Scene scene1,scene2,scene3,scene4,scene5,main;
+    private static Stage stage;
     @Override
     public void start(Stage primaryStage) throws Exception{
         try {
@@ -30,18 +32,25 @@ public class Main extends Application {
 */
             Parent root = FXMLLoader.load(getClass().getResource("fxml/Main.fxml"));
             Scene scene = new Scene(root);
+            stage = primaryStage;
             primaryStage.setTitle("Medical Agent ");
             primaryStage.initStyle(StageStyle.DECORATED);
+            primaryStage.setResizable(false);
             primaryStage.setScene(scene);
             primaryStage.show();
-        } catch (HeadlessException e) {
+            }
+            catch (HeadlessException e) {
             e.printStackTrace();
         }
 
     }
+    public void changeScence(String fxml) throws IOException {
+        Parent pane =FXMLLoader.load(getClass().getResource(fxml));
+        stage.getScene().setRoot(pane);
+    }
 
 
     public static void main(String[] args) {
-        launch(args);
+            launch(args);
     }
 }
